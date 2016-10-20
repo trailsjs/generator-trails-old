@@ -1,6 +1,12 @@
+'use strict'
+
+const Controller = require('trails-controller')
+
 /**
  * @module <%= name %>Controller
- * @description Generated Trails.js Controller.
- * @this TrailsApp
+ * @description <%= answers.desc %>.
  */
-module.exports = {}
+module.exports = class <%= name %>Controller extends Controller{
+
+}
+

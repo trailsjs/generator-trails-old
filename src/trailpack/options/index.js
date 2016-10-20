@@ -13,17 +13,4 @@
  * }
  */
 
-export default {
-  'skip-update': {
-    desc: `Do not check for generator\'s updates`,
-    type: Boolean,
-    defaults: false,
-    hide: false
-  },
-  'trailpacks': {
-    desc: `Trailpacks to install`,
-    type: String,
-    defaults: null,
-    hide: false
-  }
-}
+export default {}

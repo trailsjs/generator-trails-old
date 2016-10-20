@@ -14,4 +14,11 @@
  * }
  */
 
-export default {}
+export default {
+  'trailpacks-name': {
+    type: String,
+    required: true,
+    desc: 'Trailpacks Name',
+    banner: 'Trailpacks Name'
+  }
+}

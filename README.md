@@ -1,8 +1,18 @@
 # generator-trails
 
+[![Gitter][gitter-image]][gitter-url]
+[![NPM version][npm-image]][npm-url]
+[![Linux + OSX Build Status][ci-image]][ci-url]
+[![Windows Build Status][appveyor-image]][appveyor-url]
+[![Dependency Status][daviddm-image]][daviddm-url]
+[![Follow @trailsjs on Twitter][twitter-image]][twitter-url]
+
 Trails Yeoman Generator.
 
 ## Usage
+
+Make sure you are using a recent version of yeoman (>=1.8). You can install the latest Yeoman with `npm i -g yo`
+
 ```sh
 $ yo trails --help
 
@@ -31,15 +41,31 @@ Generators:
 
   Create New Service
     yo trails:service <service-name>
+    
+  Install New Trailpacks
+    yo trails:trailpack <trailpacks-name> (like yo trails:trailpack trailpack-repl,trailpack-webpack,...)
 ```
 
 ## Contributing
-We love contributions! In order to be able to review your code efficiently,
-please keep the following in mind:
-
-1. Pull Requests (PRs) must include new and/or updated tests, and all tests [must pass](https://travis-ci.org/trailsjs/generator-trails).
-2. Use `eslint`! See the `eslintConfig` in [package.json](./package.json).
-3. Please [reference the relevant issue](https://github.com/blog/1506-closing-issues-via-pull-requests) in your Pull Request.
+We love contributions! Please see our [Contribution Guide](https://github.com/trailsjs/trails/blob/master/.github/CONTRIBUTING.md)
+for more information.
 
 ## License
-[MIT](./LICENSE)
+[MIT](https://github.com/trailsjs/trails/blob/master/LICENSE)
+
+<img src="http://i.imgur.com/dCjNisP.png">
+
+[trails-image]: http://i.imgur.com/amwaQQI.png
+[trails-url]: http://trailsjs.io
+[npm-image]: https://img.shields.io/npm/v/generator-trails.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/generator-trails
+[ci-image]: https://img.shields.io/travis/trailsjs/generator-trails.svg?style=flat-square&label=Linux%20/%20OSX
+[ci-url]: https://travis-ci.org/trailsjs/generator-trails
+[appveyor-image]: https://img.shields.io/appveyor/ci/trailsjs/generator-trails/master.svg?style=flat-square&label=Windows
+[appveyor-url]: https://ci.appveyor.com/project/trailsjs/generator-trails
+[daviddm-image]: http://img.shields.io/david/trailsjs/generator-trails.svg?style=flat-square
+[daviddm-url]: https://david-dm.org/trailsjs/generator-trails
+[gitter-image]: http://img.shields.io/badge/+%20GITTER-JOIN%20CHAT%20%E2%86%92-1DCE73.svg?style=flat-square
+[gitter-url]: https://gitter.im/trailsjs/trails
+[twitter-image]: https://img.shields.io/twitter/follow/trailsjs.svg?style=social
+[twitter-url]: https://twitter.com/trailsjs

@@ -3,12 +3,14 @@ import generatorArguments from './arguments'
 import generatorOptions from './options'
 import generatorSteps from './steps'
 
-export default class AppGenerator extends Base {
+export default class ControllerGenerator extends Base {
   constructor(...args) {
     super(...args)
 
     Object.keys(generatorArguments).forEach(key => this.argument(key, generatorArguments[key]))
     Object.keys(generatorOptions).forEach(key => this.option(key, generatorOptions[key]))
+
+    this.description = 'Install new Trailpacks and copy default files'
   }
 
   get configuring() {

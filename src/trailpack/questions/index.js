@@ -10,4 +10,5 @@
  * }]
  */
 
-export default []
+export default [
+]
