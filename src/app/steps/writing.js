@@ -7,6 +7,7 @@ import fs from 'fs'
 import path from 'path'
 import {util as Util} from '@trails/generator-util'
 const TRAILS_TEMPLATE = path.dirname(require.resolve('trails/archetype'))
+const trailsSemver = require('trails/archetype/package').dependencies.trails
 
 export default {
   genericApi () {
@@ -51,7 +52,7 @@ export default {
 
     fs.copyTpl(path.resolve(TRAILS_TEMPLATE, 'config', 'main.js'), mainConfigFile, {trailpacks: trailpackRequires})
 
-    let npmTrailpacks = trailpackNames.map(name => `${name}@latest`)
+    let npmTrailpacks = trailpackNames.map(name => `${name}@${trailsSemver}`)
 
     if (server == 'express') {
       if (this.answers['express-version'] == '4') {
